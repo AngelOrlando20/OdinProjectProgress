@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+<!--
+    1. How to create links to pages on other websites on the internet
+    2. How to create links to other pages on your own websites
+    3. The difference between absolute and relative links
+    4. How to display an image on a webpage using HTML
+-->
+<!--
+Hyperlink. (HREF on HTML Doc)
+En informática, un hipervínculo o hiperenlace, también conocido simplemente como enlace o vínculo,
+es una referencia unidireccional en un documento electrónico 
+que entrelaza diferentes documentos o secciones entre sí.
+-->
+<!--
+HREF attribute. 
+can reference any RESOURCE on the internet, but also other html documents, videos, pdf files, images, and so on.
+TARGET attribute.
+_blank. Open a website in another tab.
+REL attribute.
+noopener - the opened link from gaining access to the webpage from which it was opened.
+noreferrer - prevents the opened link from knowing which webpage or resource has a link.
+-->
+
+<body>
+  <h1>Recetas</h1>
+  <p>Lista de receta <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">aquí.</a>
+  </p>
+  <h1>Cubos Dany</h1>
+  <!-- img TAG: colocar el link de la imagen en el atributo src="link_here" -->
+  <div class="contenedor">
+    <img class="raspberrypi" alt="Raspberry PI img."
+      src="https://assets.raspberrypi.com/static/lg-2ffff1686fa9c920757bba9ce8a17c90.png">
+    <a href="./CubosDany.jpg"><img class="raspberrypi" alt="Cubos Dany." src="./CubosDany.jpg"></a>
+  </div>
+  <!-- for parent relatives use ../ to access parent folder-->
+  <p><a href="./about.html">Acerca de este sitio.</a></p>
+</body>
+
+<style>
+  .raspberrypi {
+    width: 10rem;
+    height: 10rem;
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+  }
+</style>
+
+<!-- HREF's LINK TYPES
+
+Absolute links: (https://www.theodinproject.com/about)
+Links to pages on other websites on the internet are called absolute links. 
+A typical absolute link will be made up of the following parts: protocol://domain/path.
+An absolute link will always contain the protocol and domain of the destination.
+
+Relative links: (about.html)
+Links to other pages within our own website are called relative links.
+Relative links do not include the domain name, since it is another page on the same site
+It assumes the domain name will be the same as the page we created the link on.
+-->
+
+</html>
